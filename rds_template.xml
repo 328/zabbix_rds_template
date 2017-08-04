@@ -908,7 +908,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Template AWS RDS:rds_stats.py[&quot;--metric&quot;,&quot;FreeStorageSpace&quot;,&quot;--instance-id&quot;,&quot;{HOST.HOST}&quot;,&quot;--access-key&quot;,&quot;{$AWS_ACCESS_KEY}&quot;,&quot;--secret-key&quot;,&quot;{$AWS_SECRET_KEY}&quot;,&quot;--region&quot;,&quot;{$REGION}&quot;].last()}&lt;200</expression>
+            <expression>{Template AWS RDS:rds_stats.py[&quot;--metric&quot;,&quot;FreeStorageSpace&quot;,&quot;--instance-id&quot;,&quot;{HOST.HOST}&quot;,&quot;--access-key&quot;,&quot;{$AWS_ACCESS_KEY}&quot;,&quot;--secret-key&quot;,&quot;{$AWS_SECRET_KEY}&quot;,&quot;--region&quot;,&quot;{$REGION}&quot;].last()}&lt;2.00</expression>
             <name>Low Disk Space on {HOST.NAME}</name>
             <url/>
             <status>0</status>
